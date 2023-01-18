@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html >
+<body>
+ <div class="login">
+	<h1>Prediction of Diabetes</h1>
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="Age" placeholder="Age Value" required="required" /><br><br>
+        <input type="text" name="Experience" placeholder="Experience value" required="required" /><br><br>
+		<input type="text" name="Income" placeholder="Income value" required="required" /><br><br>
+        <input type="text" name="Family" placeholder="Family value" required="required" /><br><br>
+        <input type="text" name="CCAvg" placeholder="CCAvg value" required="required" /><br><br>
+        <input type="text" name="Education" placeholder="Education value" required="required" /><br><br>
+        <input type="text" name="Mortgage" placeholder="Mortgage value" required="required" /><br><br>
+        <input type="text" name="Securities" placeholder="Securities value" required="required" /><br><br>
+        <input type="text" name="CDAccount" placeholder="CDAccount value" required="required" /><br><br>
+        <input type="text" name="Online" placeholder="Online value" required="required" /><br><br>
+        <input type="text" name="CreditCard" placeholder="CreditCard value" required="required" /><br><br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button><br>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
